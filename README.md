@@ -29,11 +29,11 @@
 
 ### 회원(User) 테이블
 
-![회원 테이블 ERD](images/user-table.png)
+![회원 테이블 ERD](https://raw.githubusercontent.com/kkshyun/mini-board/main/images/user-table.png)
 
 ### 게시글(Post) 테이블
 
-![게시글 테이블 ERD](images/post-table.png)
+![게시글 테이블 ERD](https://raw.githubusercontent.com/kkshyun/mini-board/main/images/post-table.png)
 
 ## 4. API 명세
 
