@@ -29,11 +29,11 @@
 
 ### 회원(User) 테이블
 
-![회원 테이블 ERD](https://raw.githubusercontent.com/kkshyun/mini-board/main/images/user-table.png)
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/6af9dac6-624b-49a1-870f-394e1668a0b6" />
 
 ### 게시글(Post) 테이블
 
-![게시글 테이블 ERD](https://raw.githubusercontent.com/kkshyun/mini-board/main/images/post-table.png)
+<img width="1288" alt="Image" src="https://github.com/user-attachments/assets/9f36a72a-db3e-4c15-8575-a75983859c63" />
 
 ## 4. API 명세
 
