@@ -29,11 +29,11 @@
 
 ### 회원(User) 테이블
 
-<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/6af9dac6-624b-49a1-870f-394e1668a0b6" />
+<img width="475" alt="Image" src="https://github.com/user-attachments/assets/29a912f3-5616-40a0-b1eb-bc32a8f2528f" />
 
 ### 게시글(Post) 테이블
 
-<img width="1288" alt="Image" src="https://github.com/user-attachments/assets/9f36a72a-db3e-4c15-8575-a75983859c63" />
+<img width="475" alt="Image" src="https://github.com/user-attachments/assets/5603748b-ef77-4ec5-b1c6-39c04eee9d7f" />
 
 ## 4. API 명세
 
