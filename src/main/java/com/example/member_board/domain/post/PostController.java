@@ -47,8 +47,7 @@ public class PostController {
 
     @PutMapping("/post/{postId}")
     public void updatePost(@PathVariable Long postId, @RequestBody PostRequest postRequest) {
-        Post post = postRequest.toEntity();
-        postService.updatePost(postId, post);
+        postService.updatePost(postId, postRequest);
     }
 
 

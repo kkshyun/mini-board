@@ -44,9 +44,9 @@ public class Post {
                 .build();
     }
 
-    public void update(Post post) {
-        this.title = post.getTitle();
-        this.content = post.getContent();
+    public void update(PostRequest postRequest) {
+        this.title = postRequest.getTitle();
+        this.content = postRequest.getContent();
         this.updatedAt = LocalDateTime.now();
     }
 

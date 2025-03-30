@@ -20,9 +20,9 @@ public class PostService {
         postRepository.deleteById(id);
     }
 
-    public void updatePost(Long id, Post post) {
+    public void updatePost(Long id, PostRequest postRequest) {
         Post findPost = postRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다."));
-        findPost.update(post);
+        findPost.update(postRequest);
     }
 
 }
