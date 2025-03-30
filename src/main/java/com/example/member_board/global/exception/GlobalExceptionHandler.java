@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@RestControllerAdvice(annotations = RestControllerAdvice.class)
+@RestControllerAdvice
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = {RuntimeException.class})
@@ -18,6 +18,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = {UserException.class})
     public ResponseEntity<Object> handleUserException(UserException e) {
         CommonErrorCode errorCode = e.getErrorCode();
+        System.out.println("errorCode = " + errorCode);
 
         return ResponseEntity
                 .status(e.getErrorCode().getHttpStatus())
