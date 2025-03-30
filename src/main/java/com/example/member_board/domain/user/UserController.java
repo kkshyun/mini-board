@@ -31,8 +31,7 @@ public class UserController {
 
     @PutMapping("/user/{userId}")
     public void updateUser(@PathVariable("userId") Long userId, @RequestBody UserRequest userRequest) {
-        User user = userRequest.toEntity();
-        userService.updateUser(userId, user);
+        userService.updateUser(userId, userRequest);
     }
 
 }

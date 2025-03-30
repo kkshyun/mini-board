@@ -22,8 +22,8 @@ public class UserService {
         userRepository.deleteById(id);
     }
 
-    public void updateUser(Long id, User user) {
+    public void updateUser(Long id, UserRequest userRequest) {
         User findUser = userRepository.findById(id).orElseThrow(() -> new UserException(CommonErrorCode.USER_NOT_FOUND));
-        findUser.update(user);
+        findUser.update(userRequest);
     }
 }

@@ -35,10 +35,10 @@ public class User {
 
     private LocalDateTime updatedAt;
 
-    public void update(User User){
-        this.name = User.getName();
-        this.email = User.getEmail();
-        this.password = User.getPassword();
+    public void update(UserRequest userRequest) {
+        this.name = userRequest.getName();
+        this.email = userRequest.getEmail();
+        this.password = userRequest.getPassword();
         this.updatedAt = LocalDateTime.now();
     }
 
