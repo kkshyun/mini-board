@@ -18,7 +18,6 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = {UserException.class})
     public ResponseEntity<Object> handleUserException(UserException e) {
         CommonErrorCode errorCode = e.getErrorCode();
-        System.out.println("errorCode = " + errorCode);
 
         return ResponseEntity
                 .status(e.getErrorCode().getHttpStatus())
