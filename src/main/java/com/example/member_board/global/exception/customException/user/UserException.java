@@ -8,8 +8,9 @@ import lombok.Getter;
 public class UserException extends RuntimeException {
     private final CommonErrorCode errorCode;
 
-    //errorCode 기본 메세지
+
     public UserException(CommonErrorCode errorCode) {
+        super(errorCode.getMessage());
         this.errorCode = errorCode;
     }
 

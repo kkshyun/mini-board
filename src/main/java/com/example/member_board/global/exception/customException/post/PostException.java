@@ -8,6 +8,7 @@ public class PostException extends RuntimeException {
     private final CommonErrorCode commonErrorCode;
 
     public PostException(CommonErrorCode commonErrorCode) {
+        super(commonErrorCode.getMessage());
         this.commonErrorCode = commonErrorCode;
     }
 
