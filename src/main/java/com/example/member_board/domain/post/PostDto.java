@@ -32,6 +32,7 @@ public class PostDto {
                 .title(post.getTitle())
                 .content(post.getContent())
                 .updatedAt(post.getUpdatedAt())
+                .createdAt(post.getCreatedAt())
                 .build();
     }
 
