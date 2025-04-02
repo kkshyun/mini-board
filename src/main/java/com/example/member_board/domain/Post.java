@@ -23,10 +23,11 @@ public class Post {
     @Column(name = "post_id")
     private Long id;
 
-    @Column(name = "user_id")
-    private Long userId;
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
-    @Column(name = "post_email")
+    @Column(name = "post_title")
     private String title;
 
     @Column(name = "post_content")

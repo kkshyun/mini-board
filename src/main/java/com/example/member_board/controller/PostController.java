@@ -8,6 +8,8 @@ import com.example.member_board.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/v1/posts")
 @RequiredArgsConstructor
@@ -32,5 +34,14 @@ public class PostController {
     @DeleteMapping("/{id}")
     public void deletePost(@PathVariable("id") Long id) {
         postService.deletePost(id);
+    }
+
+    @GetMapping("/user/{userId}")
+    public List<PostResponse> getAllPostsByUser(@PathVariable("userId") Long userId) {
+        return postService.getAllPostsByUser(userId);
+    }
+    @GetMapping
+    public List<PostResponse> getAllPosts() {
+        return postService.getAllPosts();
     }
 }
