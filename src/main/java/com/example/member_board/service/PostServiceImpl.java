@@ -57,6 +57,7 @@ public class PostServiceImpl implements PostService{
 
     @Override
     public List<PostResponse> getAllPostsByUser(Long userId) {
+        userRepository.findById(userId).orElseThrow(()->new UserNotFoundException());
         List<Post> allPostsByUserId = postRepository.findAllPostsByUserId(userId);
         return allPostsByUserId.stream()
                 .map(PostResponse::from)
